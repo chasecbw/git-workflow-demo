@@ -16,3 +16,4 @@ scrollContainer: null // optional scroll container selector, otherwise use windo
 }
 );
 wow.init();
+

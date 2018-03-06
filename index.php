@@ -1,3 +1,7 @@
+<?php
+    include('functions.php');
+    $db = new DB($_SERVER['REMOTE_ADDR'], $_ENV["MYSQL_DATABASE"], $_ENV["MYSQL_USER"], $_ENV["MYSQL_PASSWORD"]);
+?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
     <head>
@@ -6,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profile</title>
         <link rel="stylesheet" href="assets/css/foundation.css">
+
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/app.css">
     </head>
@@ -13,9 +18,11 @@
         <div class="grid-container">
             <div class="grid-x grid-padding-x">
                 <div class="large-12 cell">
+
                     <div class="page-header wow fadeInDown">
                         <h1>User Profile</h1>
                     </div>
+                    <h1>User Profile</h1>
                 </div>
             </div>
 
@@ -26,8 +33,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
         <script src="assets/js/vendor/jquery.js"></script>
